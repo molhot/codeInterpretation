@@ -17,7 +17,6 @@ class SharpToken {
     }
 
     setTokenTextFromLine(line) {
-        console.log(line.split('#'));
         return line.split('#')[1];
     }
 
