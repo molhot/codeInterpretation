@@ -1,3 +1,5 @@
+//more 連続入力に対応するかどうかを考えるべきかも
+
 const editor = document.getElementById('editor');
 const lineNumbers = document.getElementById('line-numbers');
 
@@ -10,8 +12,6 @@ function updateLineNumbers() {
     lineNumbersText += i + '\n';
     }
 
-    // HTMLに行番号を挿入
-    console.log(lineNumbersText);
     lineNumbers.innerHTML = lineNumbersText.split('\n').map(line => line).join('<br>');
 }
 
