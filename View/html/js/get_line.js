@@ -8,12 +8,7 @@ class SharpToken {
     }
 
     isSharpToken(line) {
-        for (const char of line){
-            if (char == '#'){
-                return true;
-            }
-        }
-        return false;
+        return line.includes('#');
     }
 
     setTokenTextFromLine(line) {
