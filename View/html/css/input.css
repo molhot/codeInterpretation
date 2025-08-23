@@ -1,0 +1,38 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#editor-container {
+    display: flex;
+    width: 100%;
+}
+
+#line-numbers {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+    user-select: none;
+    color: #888;
+    border-right: 1px solid #ccc;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+#editor {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4em;
+    white-space: pre;
+    overflow: auto;
+}
