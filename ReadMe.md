@@ -105,3 +105,18 @@ for i in range(len(l)):             # error: not indented
                 r.append(l[i:i+1] + x)
             return r                # error: inconsistent dedent
 ```
+
+# 実装に関してのメモ書き 
+下記のような単純例を考える 
+
+```python
+def testFunc():
+    name = "Brand" #ここは不要
+    print(name)
+
+...色々記載
+```
+
+この場合一行ごとに評価するよりかは関数の終了まで評価した方が良さそうではある 
+関数などが始まったタイミングでtokenを追加していき、最終的に内包しているtokenなどを評価すべきっぽい 
+実装は単純な1ラインから始めて徐々に機能を追加していく流れにする 
