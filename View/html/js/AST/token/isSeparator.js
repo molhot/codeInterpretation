@@ -40,7 +40,7 @@ function getSeparator(char, nextChar, nextnextChar, lineNumber){
             (char == ':' && nextChar == '=') ||
             (char == '<' && nextChar == '=')
         ){
-            return [wordType["SymbolWord"], lineNumber++];
+            return [wordType["SymbolWord"], lineNumber + 1];
         } else {
             return [wordType["SymbolWord"], lineNumber];
         }
