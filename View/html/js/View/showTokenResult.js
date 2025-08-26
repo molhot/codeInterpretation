@@ -12,8 +12,9 @@ function showTokenResult (allSeparatorList) {
 function lineSeparatorList (lineNum, separatorList){
     console.log(separatorList);
     htmlText = `
+        <hr>
         <div class="lineNum">
-            ${lineNum}
+            ${lineNum} 行目
         </div>
         <hr>
     `;
@@ -32,7 +33,6 @@ function lineSeparatorList (lineNum, separatorList){
                 <div><strong>Line Index:</strong> ${lineIndex}</div>
                 <div><strong>Line Index End:</strong> ${lineIndexEnd}</div>
             </div>
-            <hr>
         `;
     }
     return htmlText;

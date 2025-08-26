@@ -27,13 +27,12 @@ function lexer(lineOperatorList){
                     lineNumComtroller,
                     beforeCharNum,
                     CharNumController,
-                    CharNumController + (charNum - beforeCharNum)
+                    CharNumController + (charNum - beforeCharNum) + 1
             ));
         }
         CharNumController++;
     }
     lineOperatorList.push(separatorList);
-    console.log(lineOperatorList);
     lineNumComtroller++;
     separatorList = [];
     showTokenResult(lineOperatorList);
