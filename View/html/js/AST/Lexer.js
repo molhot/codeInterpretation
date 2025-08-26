@@ -2,7 +2,7 @@ let CharNumController = 0;
 let lineNumComtroller = 0;
 let separatorList = [];
 
-function lexer(){
+function lexer(lineOperatorList){
     // let code_line = "";
 
     const lastLine = editor.value.split('\n').at(-1);
@@ -32,6 +32,9 @@ function lexer(){
         }
         CharNumController++;
     }
+    lineOperatorList.push(separatorList);
+    console.log(lineOperatorList);
     lineNumComtroller++;
-    console.log(separatorList);
+    separatorList = [];
+    showTokenResult(lineOperatorList);
 }
